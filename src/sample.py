@@ -4,7 +4,7 @@ import rospy
 from rospy_test_bug.msg import *
 import struct
 
-class SampleClass:
+class SampleParser:
 
     def __init__(self):
         pass
@@ -18,7 +18,7 @@ class SampleClass:
         sample_msg = Sample()
         sample_msg.utc_time = utc
         sample_msg.zero = parsed[0]
-        sample_msg.one = parsed[2]
-        sample_msg.two = parsed[3]
-        sample_msg.three = parsed[4]
+        sample_msg.one = parsed[1]
+        sample_msg.two = parsed[2]
+        sample_msg.three = parsed[3]
         return sample_msg
