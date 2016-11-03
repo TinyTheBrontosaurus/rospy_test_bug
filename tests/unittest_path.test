@@ -1,3 +1,3 @@
 <launch>
-  <test test-name="unittest_path" pkg="rospy_test_bug" type="unittest_path.py" />
+  <test test-name="mean_to_fail_unittest_path" pkg="rospy_test_bug" type="unittest_path.py" />
 </launch>

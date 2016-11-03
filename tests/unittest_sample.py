@@ -28,6 +28,9 @@ class TestSample(unittest.TestCase):
         self.assertEqual(values.two, 2, msg="two")
         self.assertEqual(values.three, 3, msg="three")
 
+    # Uncomment (i.e., remove the leading x) to turn on path printing. Note this will cause the test to fail
+    def xtest_path(self):
+        self.assertEquals(1, 2, msg="Python Path: \n{}".format('\n'.join(sys.path)))
 
 if __name__ == '__main__':
     import rosunit
